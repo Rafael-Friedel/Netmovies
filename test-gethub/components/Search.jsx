@@ -1,6 +1,6 @@
 import React from 'react';
-import SearchButton from './buttons/searchButton';
-import SearchInput from './inputs/searchInput';
+import SearchButton from './buttons/SearchButton';
+import SearchInput from './inputs/SearchInput';
 
 const Search = () => {
   return (
