@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const myKey = '58a04592f5640cf46df9e239e612ecff';
+const myKey = process.env.NEXT_PUBLIC_MY_KEY;
 
 const getMoviesByName = async (name) => {
   const base = 'https://api.themoviedb.org/3/search/movie?api_key=';
