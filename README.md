@@ -19,14 +19,6 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] trazer um gif da aplicação funcionando
 - [ ] implementar testes
 
-## 💻 Pré-requisitos
-
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
-<!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* Você instalou a versão mais recente de `<linguagem / dependência / requeridos>`
-* Você tem uma máquina `<Windows / Linux / Mac>`. Indique qual sistema operacional é compatível / não compatível.
-* Você leu `<guia / link / documentação_relacionada_ao_projeto>`.
-
 ## 🚀 Rodando o  NetMovies local
 
 Para rodar o NetMovies local, siga estas etapas:
@@ -37,7 +29,7 @@ git clone git@github.com:Rafael-Friedel/Netmovies.git && cd test-gethub
 ```
 
 ```
-npm run dev
+npm i && npm run dev
 ```
 
 Basta abrir em seu navegador:
