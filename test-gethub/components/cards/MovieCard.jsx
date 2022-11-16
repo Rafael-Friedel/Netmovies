@@ -30,7 +30,7 @@ const MovieCard = (props) => {
 
 MovieCard.propTypes = {
   name: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
+  date: PropTypes.string,
   img: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
 };
