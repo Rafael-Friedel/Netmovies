@@ -1,7 +1,12 @@
-import '../styles/globals.css'
+import 'bulma/css/bulma.min.css';
+import MyProvider from '../context/myProvider';
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <MyProvider>
+      <Component {...pageProps} />
+    </MyProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
