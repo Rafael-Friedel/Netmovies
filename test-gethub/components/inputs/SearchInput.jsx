@@ -11,6 +11,7 @@ const SearchInput = () => {
         className="input is-primary"
         type="text"
         placeholder="Qual o filme?"
+        data-testid="input-search"
         name="movieName"
         value={state.movieName}
         onChange={(e) => handleChange(e, state, setState)}
