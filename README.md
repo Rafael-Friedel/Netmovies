@@ -18,7 +18,7 @@ Para rodar o NetMovies local, siga estas etapas:
 
 Linux e macOS:
 ```
-git clone git@github.com:Rafael-Friedel/Netmovies.git && cd test-gethub
+git clone git@github.com:Rafael-Friedel/Netmovies.git && cd Netmovies/test-gethub
 ```
 
 ```
