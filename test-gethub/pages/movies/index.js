@@ -19,15 +19,17 @@ export default function Movies() {
   return (
     <main>
       <Search />
-      {state.listMovies.map(({ id, title, release_date, poster_path }) => (
-        <MovieCard
-          key={id}
-          name={title}
-          date={release_date.split('-').reverse().join('/')}
-          img={`${state.configuration.images.secure_base_url}original${poster_path}`}
-          id={id}
-        />
-      ))}
+      <section className="columns p-4">
+        {state.listMovies.map(({ id, title, release_date, poster_path }) => (
+          <MovieCard
+            key={id}
+            name={title}
+            date={release_date.split('-').reverse().join('/')}
+            img={`${state.configuration.images.secure_base_url}original${poster_path}`}
+            id={id}
+          />
+        ))}
+      </section>
     </main>
   );
 }

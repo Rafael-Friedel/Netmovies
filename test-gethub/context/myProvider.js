@@ -11,6 +11,7 @@ function MyProvider({ children }) {
     configuration: {},
     similarMovies: [],
     movie: {},
+    loading: false,
   });
 
   const handleChange = ({ target }, state, setState) => {
