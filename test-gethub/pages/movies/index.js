@@ -23,7 +23,7 @@ export default function Movies() {
         <MovieCard
           key={id}
           name={title}
-          date={release_date}
+          date={release_date.split('-').reverse().join('/')}
           img={`${state.configuration.images.secure_base_url}original${poster_path}`}
           id={id}
         />
