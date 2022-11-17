@@ -4,7 +4,7 @@ import Search from '../../components/Search';
 import myContext from '../../context/myContext';
 import getConfigurationApi from '../../helpers/fetchs/getConfigurationApi';
 
-export default function Home() {
+export default function Movies() {
   const { state, setState } = useContext(myContext);
 
   const setConfiguration = async () => {
