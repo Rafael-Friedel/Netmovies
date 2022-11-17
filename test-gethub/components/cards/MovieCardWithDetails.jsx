@@ -6,17 +6,13 @@ const MovieCardWithDetails = (props) => {
   return (
     <section className="card">
       <section className="card-image">
-        <figure className="image is-4by3">
+        <figure className="image is-2by1">
           <img src={img} alt="Capa do filme" />
         </figure>
       </section>
-      <section className="card-content">
-        <section className="media">
-          <section className="media-content">
-            <h2 className="title is-4 is-uppercase">{name}</h2>
-            <p>{overview || 'Sinopse não informada!'}</p>
-          </section>
-        </section>
+      <section className="media-content px-6 py-4">
+        <h2 className="title is-4 is-uppercase">{name}</h2>
+        <p>{overview || 'Sinopse não informada!'}</p>
       </section>
     </section>
   );

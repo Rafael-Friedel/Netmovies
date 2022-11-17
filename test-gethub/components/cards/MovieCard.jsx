@@ -8,22 +8,22 @@ const MovieCard = (props) => {
   const { selectMovie } = useContext(myContext);
 
   return (
-    <section className="card">
-      <section className="card-image">
-        <Link as={`/movies/${id}`} href="/movies/[id]">
-          <figure className="image is-4by3">
-            <img src={img} alt="Capa do filme" onClick={selectMovie} id={id} />
-          </figure>
-        </Link>
-      </section>
-      <section className="card-content">
-        <section className="media">
-          <section className="media-content">
-            <p className="title is-4 is-uppercase">{name}</p>
-            {date && <p className="is-italic has-text-weight-light">{date}</p>}
-          </section>
+    <section className="column is-one-fifth">
+      <Link as={`/movies/${id}`} href="/movies/[id]">
+        <figure className="">
+          <img
+            src={img}
+            alt="Capa do filme"
+            onClick={selectMovie}
+            id={id}
+            data-testtid="movie-card"
+          />
+        </figure>
+        <section className="$primary: $turquoise">
+          <p className="title is-size-6 is-uppercase">{name}</p>
         </section>
-      </section>
+      </Link>
+      {date && <p className="is-italic has-text-weight-light">{date}</p>}
     </section>
   );
 };
