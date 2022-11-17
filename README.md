@@ -25,6 +25,21 @@ git clone git@github.com:Rafael-Friedel/Netmovies.git && cd Netmovies/test-gethu
 npm i && npm run dev
 ```
 
+```
+cat > .env.local 
+```
+
+digite sua key:
+```
+NEXT_PUBLIC_MY_KEY={SUA_KEY_AQUI}
+```
+
+Aperte CTRL+Z 
+
+```
+npm run dev
+```
+
 Basta abrir em seu navegador:
 
 ```
