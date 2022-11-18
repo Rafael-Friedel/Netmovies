@@ -3,6 +3,7 @@ import MovieCard from '../../components/cards/MovieCard';
 import Search from '../../components/Search';
 import myContext from '../../context/myContext';
 import getConfigurationApi from '../../helpers/fetchs/getConfigurationApi';
+import defaultImg from '../../helpers/utils/defaultImg';
 
 export default function Movies() {
   const { state, setState } = useContext(myContext);
@@ -25,7 +26,11 @@ export default function Movies() {
             key={id}
             name={title}
             date={release_date.split('-').reverse().join('/')}
-            img={`${state.configuration.images.secure_base_url}original${poster_path}`}
+            img={
+              poster_path
+                ? `${state.configuration.images.secure_base_url}original${poster_path}`
+                : defaultImg
+            }
             id={id}
           />
         ))}
