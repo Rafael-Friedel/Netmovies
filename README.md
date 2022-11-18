@@ -18,11 +18,26 @@ Para rodar o NetMovies local, siga estas etapas:
 
 Linux e macOS:
 ```
-git clone git@github.com:Rafael-Friedel/Netmovies.git && cd test-gethub
+git clone git@github.com:Rafael-Friedel/Netmovies.git && cd Netmovies/test-gethub
 ```
 
 ```
 npm i && npm run dev
+```
+
+```
+cat > .env.local 
+```
+
+digite sua key:
+```
+NEXT_PUBLIC_MY_KEY={SUA_KEY_AQUI}
+```
+
+Aperte CTRL+Z 
+
+```
+npm run dev
 ```
 
 Basta abrir em seu navegador:
