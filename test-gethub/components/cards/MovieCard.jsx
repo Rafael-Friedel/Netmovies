@@ -13,7 +13,7 @@ const MovieCard = (props) => {
         <figure className="">
           <img
             src={img}
-            alt="Capa do filme"
+            alt={`Capa do filme ${name}`}
             onClick={selectMovie}
             id={id}
             data-testtid="movie-card"

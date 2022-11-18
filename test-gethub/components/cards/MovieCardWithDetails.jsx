@@ -4,10 +4,10 @@ const MovieCardWithDetails = (props) => {
   const { img, name, overview } = props;
 
   return (
-    <section className="card">
+    <section className="card ">
       <section className="card-image">
         <figure className="image is-2by1">
-          <img src={img} alt="Capa do filme" />
+          <img src={img} alt={`Capa do filme ${name}`} />
         </figure>
       </section>
       <section className="media-content px-6 py-4">
