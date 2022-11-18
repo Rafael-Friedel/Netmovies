@@ -19,11 +19,11 @@ const MovieCard = (props) => {
             data-testtid="movie-card"
           />
         </figure>
-        <section className="$primary: $turquoise">
-          <p className="title is-size-6 is-uppercase">{name}</p>
-        </section>
+        <p className="title is-size-6 is-uppercase">{name}</p>
       </Link>
-      {date && <p className="is-italic has-text-weight-light">{date}</p>}
+      {date && (
+        <p className="is-italic has-text-weight-light">{`Data de lançamento: ${date}`}</p>
+      )}
     </section>
   );
 };

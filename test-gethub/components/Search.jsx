@@ -4,7 +4,7 @@ import SearchInput from './inputs/SearchInput';
 
 const Search = () => {
   return (
-    <section className="panel-block">
+    <section className="panel-block mb-4">
       <SearchInput />
       <SearchButton />
     </section>
