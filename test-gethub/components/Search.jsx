@@ -4,7 +4,10 @@ import SearchInput from './inputs/SearchInput';
 
 const Search = () => {
   return (
-    <section className="panel-block mb-4">
+    <section
+      className="panel-block mb-2"
+      style={{ background: '#0f2a50', height: '100px' }}
+    >
       <SearchInput />
       <SearchButton />
     </section>

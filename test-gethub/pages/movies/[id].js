@@ -14,7 +14,7 @@ const PageDetails = () => {
         name={state.movie.title}
         img={
           state.movie.poster_path
-            ? `${state.configuration.images.secure_base_url}original${state.img.poster_path}`
+            ? `${state.configuration.images.secure_base_url}original${state.movie.poster_path}`
             : defaultImg
         }
         overview={state.movie.overview}
@@ -26,7 +26,10 @@ const PageDetails = () => {
           Este filme não possui filmes similares
         </h2>
       )}
-      <section className="columns px-4 is-flex-wrap-wrap">
+      <section
+        className="columns px-4 is-flex-wrap-wrap"
+        style={{ background: '#191934' }}
+      >
         {state.similarMovies.map(({ id, title, poster_path }) => (
           <MovieCard
             key={id}

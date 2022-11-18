@@ -10,7 +10,7 @@ const SearchInput = () => {
       <input
         className="input is-primary"
         type="text"
-        placeholder="Qual o filme?"
+        placeholder="Qual o filme deseja buscar?"
         data-testid="input-search"
         name="movieName"
         value={state.movieName}

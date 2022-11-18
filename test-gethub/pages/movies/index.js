@@ -20,7 +20,10 @@ export default function Movies() {
   return (
     <main>
       <Search />
-      <section className="columns p-4 is-flex-wrap-wrap">
+      <section
+        className="columns p-4 is-flex-wrap-wrap"
+        style={{ background: '#191934' }}
+      >
         {state.listMovies.map(({ id, title, release_date, poster_path }) => (
           <MovieCard
             key={id}

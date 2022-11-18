@@ -12,7 +12,7 @@ const MovieCard = (props) => {
       <Link as={`/movies/${id}`} href="/movies/[id]">
         <figure>
           <img
-            style={{ width: '238px', height: '358px' }}
+            style={{ width: '238px', height: '358px', borderRadius: '8px' }}
             src={img}
             alt={`Capa do filme ${name}`}
             onClick={selectMovie}
@@ -20,10 +20,20 @@ const MovieCard = (props) => {
             data-testtid="movie-card"
           />
         </figure>
-        <p className="title is-size-6 is-uppercase">{name}</p>
+        <p
+          className="title is-size-6 is-uppercase"
+          style={{ color: 'white', width: '220px', textAlign: 'center' }}
+        >
+          {name}
+        </p>
       </Link>
       {date && (
-        <p className="is-italic has-text-weight-light">{`Data de lançamento: ${date}`}</p>
+        <p
+          className="is-italic has-text-weight-light"
+          style={{ color: 'silver' }}
+        >
+          {`Data de lançamento: ${date}`}
+        </p>
       )}
     </section>
   );
