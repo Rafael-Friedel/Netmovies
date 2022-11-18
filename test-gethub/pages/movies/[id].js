@@ -14,8 +14,8 @@ const PageDetails = () => {
         img={`${state.configuration.images.secure_base_url}original${state.movie.poster_path}`}
         overview={state.movie.overview}
       />
-      <h2 className="py-2 px-6 is-italic subtitle">Filmes similares:</h2>
-      <section className="columns px-4">
+      <h2 className="py-2 px-6 is-italic subtitle my-4">Filmes similares:</h2>
+      <section className="columns px-4 is-flex-wrap-wrap">
         {state.similarMovies.map(({ id, title, poster_path }) => (
           <MovieCard
             key={id}
