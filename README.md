@@ -12,6 +12,11 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] trazer um gif da aplicação funcionando
 - [ ] implementar testes
 
+### Desafios
+
+Trazer uma boa experiência ao usuário, fazendo uso da api https://developers.themoviedb.org/3/getting-started/introduction. A página deve possuir uma opção de busca onde pode se buscar filmes pelo título, mostrando a lista de filmes e podendo selecioná-lo e obter mais detalhes do filme em português.
+
+
 ## 🚀 Rodando o  NetMovies local
 
 Para rodar o NetMovies local, siga estas etapas:
