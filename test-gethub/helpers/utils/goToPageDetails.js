@@ -1,8 +1,8 @@
-export default function goToPageDetails(screen, userEvent) {
+export default async function goToPageDetails(screen, userEvent) {
   const inputSearch = screen.getByTestId('input-search');
   const button = screen.getByRole('button', { text: 'Buscar filme' });
-  userEvent.type(inputSearch, 'homem aranha');
-  userEvent.click(button);
+  await userEvent.type(inputSearch, 'homem aranha');
+  await userEvent.click(button);
   const movies = screen.getAllByTestId('movie-card');
-  userEvent.click(movies[0]);
+  await userEvent.click(movies[0]);
 }

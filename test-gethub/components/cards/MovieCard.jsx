@@ -10,8 +10,9 @@ const MovieCard = (props) => {
   return (
     <section className="column is-one-fifth">
       <Link as={`/movies/${id}`} href="/movies/[id]">
-        <figure className="">
+        <figure>
           <img
+            style={{ width: '238px', height: '358px' }}
             src={img}
             alt={`Capa do filme ${name}`}
             onClick={selectMovie}
