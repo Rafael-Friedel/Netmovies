@@ -10,7 +10,7 @@ const MovieCardWithDetails = (props) => {
           <img
             src={img}
             alt={`Capa do filme ${name}`}
-            style={{ height: '650px' }}
+            style={{ height: '650px', objectFit: 'cover' }}
           />
         </figure>
       </section>
@@ -18,7 +18,9 @@ const MovieCardWithDetails = (props) => {
         className="media-content px-6 py-4"
         style={{ background: '#fff3ff' }}
       >
-        <h2 className="title is-4 is-uppercase">{name}</h2>
+        <h2 className="title is-4 is-uppercase" style={{ textAlign: 'center' }}>
+          {name}
+        </h2>
         <p>{overview || 'Sinopse não informada!'}</p>
       </section>
     </section>
