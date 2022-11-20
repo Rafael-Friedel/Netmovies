@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useContext, useEffect } from 'react';
 import MovieCard from '../../components/cards/MovieCard';
-import Search from '../../components/Search';
+import Header from '../../components/Header';
 import myContext from '../../context/myContext';
 import getConfigurationApi from '../../helpers/fetchs/getConfigurationApi';
 import defaultImg from '../../helpers/utils/defaultImg';
@@ -21,7 +21,7 @@ export default function Movies() {
 
   return (
     <main>
-      <Search />
+      <Header />
       <section className="columns p-4 is-flex-wrap-wrap b-cards">
         {state.listMovies.length > 0 ? (
           state.listMovies.map(({ id, title, release_date, poster_path }) => (
