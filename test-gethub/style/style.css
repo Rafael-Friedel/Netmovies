@@ -1,0 +1,44 @@
+.border {
+  border-radius: 8px;
+}
+
+.title_card {
+  color: white;
+  width: 220px;
+  text-align: center;
+}
+
+.color_date {
+  color: silver;
+}
+
+.card-detail {
+  object-fit: cover;
+  width: 100%;
+  height: 650px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.b_overview {
+  background: #fff3ff;
+}
+
+.component_search {
+  background: #0f2a50;
+  height: 100px;
+}
+
+.b-cards {
+  background: #191934;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  object-fit: cover;
+  margin: 178px;
+}

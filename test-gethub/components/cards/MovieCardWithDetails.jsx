@@ -1,26 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
 import PropTypes from 'prop-types';
 
 const MovieCardWithDetails = (props) => {
   const { img, name, overview } = props;
 
   return (
-    <section className="card ">
-      <section className="card-image">
-        <figure className="image">
-          <img
-            src={img}
-            alt={`Capa do filme ${name}`}
-            style={{ height: '650px', objectFit: 'cover' }}
-          />
-        </figure>
-      </section>
-      <section
-        className="media-content px-6 py-4"
-        style={{ background: '#fff3ff' }}
-      >
-        <h2 className="title is-4 is-uppercase" style={{ textAlign: 'center' }}>
-          {name}
-        </h2>
+    <section>
+      <img src={img} alt={`Capa do filme ${name}`} className="card-detail" />
+      <section className="media-content px-6 py-4 b_overview">
+        <h2 className="title is-4 is-uppercase text_center">{name}</h2>
         <p>{overview || 'Sinopse não informada!'}</p>
       </section>
     </section>

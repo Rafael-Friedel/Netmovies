@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useContext, useEffect } from 'react';
 import MovieCard from '../../components/cards/MovieCard';
 import Search from '../../components/Search';
@@ -21,10 +22,7 @@ export default function Movies() {
   return (
     <main>
       <Search />
-      <section
-        className="columns p-4 is-flex-wrap-wrap"
-        style={{ background: '#191934' }}
-      >
+      <section className="columns p-4 is-flex-wrap-wrap b-cards">
         {state.listMovies.length > 0 ? (
           state.listMovies.map(({ id, title, release_date, poster_path }) => (
             <MovieCard
@@ -40,16 +38,13 @@ export default function Movies() {
             />
           ))
         ) : (
-          <img
+          <Image
             src={logo.src}
             alt="logo da página"
-            style={{
-              width: '100%',
-              height: '100%',
-              textAlign: 'center',
-              objectFit: 'cover',
-              margin: '178px',
-            }}
+            className="logo"
+            width={500}
+            height={500}
+            layout="raw"
           />
         )}
       </section>

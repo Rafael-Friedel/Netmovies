@@ -1,37 +1,29 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import React, { useContext } from 'react';
-import myContext from '../../context/myContext';
+import React from 'react';
 
 const MovieCard = (props) => {
   const { img, name, date, id } = props;
-  const { selectMovie } = useContext(myContext);
 
   return (
     <section className="column is-one-fifth">
       <Link as={`/movies/${id}`} href="/movies/[id]">
-        <figure>
+        <a>
           <img
-            style={{ width: '238px', height: '358px', borderRadius: '8px' }}
+            width={238}
+            height={358}
+            className="border"
             src={img}
             alt={`Capa do filme ${name}`}
-            onClick={selectMovie}
             id={id}
             data-testtid="movie-card"
           />
-        </figure>
-        <p
-          className="title is-size-6 is-uppercase"
-          style={{ color: 'white', width: '220px', textAlign: 'center' }}
-        >
-          {name}
-        </p>
+        </a>
+        <p className="title is-size-6 is-uppercase title_card">{name}</p>
       </Link>
       {date && (
-        <p
-          className="is-italic has-text-weight-light"
-          style={{ color: 'silver' }}
-        >
+        <p className="is-italic has-text-weight-light color_date">
           {`Data de lançamento: ${date}`}
         </p>
       )}
