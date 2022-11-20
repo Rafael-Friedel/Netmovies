@@ -1,12 +1,17 @@
 import { useRouter } from 'next/router';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import MovieCard from '../../components/cards/MovieCard';
 import MovieCardWithDetails from '../../components/cards/MovieCardWithDetails';
 import myContext from '../../context/myContext';
 import defaultImg from '../../helpers/utils/defaultImg';
 
 const PageDetails = () => {
-  const { state } = useContext(myContext);
+  const router = useRouter();
+  const { id } = router.query;
+  const { state, selectMovie } = useContext(myContext);
+  useEffect(() => {
+    selectMovie(id);
+  }, [id]);
 
   return (
     <main>
@@ -26,20 +31,17 @@ const PageDetails = () => {
           Este filme não possui filmes similares
         </h2>
       )}
-      <section
-        className="columns px-4 is-flex-wrap-wrap"
-        style={{ background: '#191934' }}
-      >
-        {state.similarMovies.map(({ id, title, poster_path }) => (
+      <section className="columns px-4 is-flex-wrap-wrap b-cards">
+        {state.similarMovies.map(({ id: sId, title, poster_path }) => (
           <MovieCard
-            key={id}
+            key={sId}
             name={title}
             img={
               poster_path
                 ? `${state.configuration.images.secure_base_url}original${poster_path}`
                 : defaultImg
             }
-            id={id}
+            id={sId}
           />
         ))}
       </section>
