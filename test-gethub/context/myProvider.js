@@ -19,8 +19,7 @@ function MyProvider({ children }) {
     setState({ ...state, [name]: value });
   };
 
-  const selectMovie = async ({ target }) => {
-    const { id } = target;
+  const selectMovie = async (id) => {
     const movie = await getMovieById(id);
     const similarMovies = await getSimilarMovies(id);
     setState({ ...state, movie, similarMovies });
