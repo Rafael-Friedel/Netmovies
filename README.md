@@ -6,11 +6,11 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] estilização
+- [x] estilização
 - [x] iniciar readme
-- [ ] subir o projeto pra nuvem e disponibilizar
+- [x] subir o projeto pra nuvem e disponibilizar
 - [ ] trazer um gif da aplicação funcionando
-- [ ] implementar testes
+- [x] implementar testes
 
 ### Desafios
 
@@ -50,3 +50,10 @@ Basta abrir em seu navegador:
 ```
 http://localhost:3000/movies
 ```
+
+## 🚀 Link de acesso do app
+
+```
+https://netmovies-khaki.vercel.app/
+```
+
