@@ -3,13 +3,17 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import axios from 'axios';
 import mockRouter from 'next-router-mock';
+import { act } from 'react-dom/test-utils';
 import goToPageDetails from '../helpers/utils/goToPageDetails';
 import renderWithProvider from '../helpers/utils/renderWithProvider';
 import configurationMock from '../mocks/configurationAPI';
 
 describe('Movies', () => {
-  beforeEach(() => {
-    renderWithProvider(<Movies />);
+  beforeEach(async () => {
+    jest.spyOn(axios, 'get').mockResolvedValue(configurationMock);
+    await act(async () => {
+      renderWithProvider(<Movies />);
+    });
   });
 
   afterEach(() => () => jest.fn().mockClear());
