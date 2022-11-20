@@ -33,12 +33,14 @@
 
 .b-cards {
   background: #191934;
+  min-height: 88vh;
 }
 
 .logo {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   text-align: center;
   object-fit: cover;
-  margin: 178px;
+  margin: 178px auto 0;
+  max-width: 600px;
 }
