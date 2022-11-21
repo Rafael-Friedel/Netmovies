@@ -1,4 +1,4 @@
-https://user-images.githubusercontent.com/94491944/203105804-d05f509d-49ca-48ac-978c-e9a164d7f2aa.mp4
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/94491944/203106251-e5def060-061c-4d62-b0d0-c734cd63d829.gif)
 
 
 # NetMovies
