@@ -1,3 +1,5 @@
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/94491944/203102977-8df968ec-8374-40f3-978f-7c78c193bf34.jpg)
+
 # NetMovies
 
 > A ideia do projeto é buscar informações de filmes em uma api pública, e retornar ao usuário os filmes contendo a palavra digitada, e podendo também buscar mais detalhes sobre o filme escolhido, como sinopse e filmes relacionados e/ou similares.
@@ -56,4 +58,5 @@ http://localhost:3000/movies
 ```
 https://netmovies-khaki.vercel.app/
 ```
+
 
