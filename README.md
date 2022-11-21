@@ -66,8 +66,7 @@ http://localhost:3000/movies
 
 ## 🚀 Link de acesso do app
 
-```
-https://netmovies-khaki.vercel.app/
-```
+-[Aplicativo de filmes](https://netmovies-khaki.vercel.app/)
+
 
 
