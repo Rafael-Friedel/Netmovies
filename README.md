@@ -15,6 +15,16 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] trazer um gif da aplicação funcionando
 - [x] implementar testes
 
+### Tecnologias utilizadas
+
+- React
+- Next (1ª vez :))
+- Jest
+- axios
+- ReactHooks
+- ContextApi
+
+
 ### Desafios
 
 Trazer uma boa experiência ao usuário, fazendo uso da api https://developers.themoviedb.org/3/getting-started/introduction. A página deve possuir uma opção de busca onde pode se buscar filmes pelo título, mostrando a lista de filmes e podendo selecioná-lo e obter mais detalhes do filme em português.
