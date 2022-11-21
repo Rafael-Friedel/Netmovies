@@ -12,7 +12,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] estilização
 - [x] iniciar readme
 - [x] subir o projeto pra nuvem e disponibilizar
-- [ ] trazer um gif da aplicação funcionando
+- [x] trazer um gif da aplicação funcionando
 - [x] implementar testes
 
 ### Desafios
