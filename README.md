@@ -5,6 +5,11 @@
 
 > A ideia do projeto é buscar informações de filmes em uma api pública, e retornar ao usuário os filmes contendo a palavra digitada, e podendo também buscar mais detalhes sobre o filme escolhido, como sinopse e filmes relacionados e/ou similares.
 
+
+## 🚀 Link de acesso do app
+
+Segue o link da aplicação para poderem testar minha aplicação. Usei o vercel para subir a aplicação. [Aplicativo de filmes](https://netmovies-khaki.vercel.app/).
+
 ### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
@@ -64,9 +69,6 @@ Basta abrir em seu navegador:
 http://localhost:3000/movies
 ```
 
-## 🚀 Link de acesso do app
-
-Segue o link da aplicação para poderem testar minha aplicação. Usei o vercel para subir a aplicação. [Aplicativo de filmes](https://netmovies-khaki.vercel.app/).
 
 
 
