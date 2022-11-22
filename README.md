@@ -23,9 +23,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ### Tecnologias utilizadas
 
 - React
-- Next (1ª vez que utilizei este framework)
+- Next **(1ª vez que utilizei este framework)**
 - CSS
-- Bulma
+- Bulma **(1ª vez que utilizei este framework)**
 - Jest
 - axios
 - ReactHooks
