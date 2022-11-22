@@ -18,7 +18,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 ### Tecnologias utilizadas
 
 - React
-- Next (1ª vez :))
+- Next (1ª vez que utilizei essa ferramenta)
 - Jest
 - axios
 - ReactHooks
@@ -66,7 +66,7 @@ http://localhost:3000/movies
 
 ## 🚀 Link de acesso do app
 
--[Aplicativo de filmes](https://netmovies-khaki.vercel.app/)
+Segue o link da aplicação para poderem testar minha aplicação. Usei o vercel para subir a aplicação. [Aplicativo de filmes](https://netmovies-khaki.vercel.app/).
 
 
 
